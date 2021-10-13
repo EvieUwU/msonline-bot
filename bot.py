@@ -175,8 +175,8 @@ mines = [10, 40, 99]
 
 diff = int(input("Please enter the difficulty (0: Beginner, 1: Advanced, 2: Expert):\t"))
 
-msWidth = 9
-msHeight = 9
+msWidth = msSize[diff][0]
+msHeight = msSize[diff][1]
 areaWidth = msSize[diff][0] * 30 + msSize[diff][0] * 2 - 2
 areaHeight = msSize[diff][1] * 30 + msSize[diff][1] * 2 - 2
 print(f"Minesweeper region dimensions: {areaWidth} {areaHeight}")
